@@ -1,0 +1,3 @@
+# The core and the terminal version (python run.py) need no packages.
+# Only the Pygame window (python run_gui.py) needs:
+pygame
