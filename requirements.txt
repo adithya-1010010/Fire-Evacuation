@@ -1,6 +1,8 @@
-# The core and the terminal version (python run.py) need no packages.
-pygame
-
-# The web version (streamlit_app.py) needs Streamlit. Streamlit Community Cloud installs
-# this file on every deploy, so keep it short.
+# The web version (streamlit_app.py) - this is what Streamlit Community Cloud installs.
 streamlit>=1.30
+
+# The core and the terminal version (python run.py) need no packages.
+#
+# The Pygame window (python main.py) needs pygame, but it is NOT installed here on purpose:
+# pygame has no wheel for every Python version and it broke the cloud build. Install it
+# locally only, if you want the desktop window:   pip install pygame
