@@ -2,7 +2,7 @@
 
 ## What
 `gui.py` is a window that shows the same simulation as the terminal. It is a second view on
-top of the core. Start it with `python run_gui.py` (needs `pip install pygame`).
+top of the core. Start it with `python main.py` (needs `pip install pygame`).
 
 ## Why separate
 The core has no printing and no pygame. `gui.py` only does three things:
@@ -11,7 +11,7 @@ The core has no printing and no pygame. `gui.py` only does three things:
 3. draw `env.grid`, `agent.path`, `agent.walked`, `agent.known_fire`, `sim.last_step`,
    `sim.history`, `sim.events` and the metrics.
 
-If `run_gui.py` cannot import pygame it prints a message and stops. `run.py` is unaffected.
+If `main.py` cannot import pygame it prints a message and stops. `run.py` is unaffected.
 
 ## Screens
 Same menu as the terminal, using number keys:

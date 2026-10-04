@@ -1,7 +1,7 @@
 """Pygame view. It only DRAWS the simulation and passes key presses to it.
 
 The core (environment, agent, astar, simulation, generator, scenarios) knows nothing about
-this file. Run it with:  python run_gui.py
+this file. Run it with:  python main.py
 """
 
 import copy

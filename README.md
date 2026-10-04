@@ -5,7 +5,7 @@ over time. The agent must reach the exit. It uses **classical AI only**: rule-ba
 A* search with the Manhattan heuristic, a simple memory of seen fire, and replanning.
 
 No machine learning. The core and the terminal version need no packages. An optional
-Pygame window draws the same simulation.
+Pygame window draws the same simulation, and an optional Streamlit page serves it in a browser.
 
 ## Run
 
@@ -17,11 +17,32 @@ Terminal version (nothing to install):
 
 Pygame window (needs `pip install pygame`):
 
-    python run_gui.py
+    python main.py
 
 Run the tests:
 
     python -m unittest discover tests
+
+## Web version (free hosting from this GitHub repository)
+
+`streamlit_app.py` runs the same simulation in a browser: pick an environment, then step
+through it or run it to the end.
+
+Locally:
+
+    pip install -r requirements.txt
+    streamlit run streamlit_app.py
+
+Free on the internet, hosted by Streamlit (no server of your own, no Procfile):
+
+1. Push this repository to GitHub.
+2. Go to <https://share.streamlit.io> -> **Deploy** -> **Yes, get started**.
+3. Connect the GitHub repository, pick the branch, and press **Deploy**.
+4. Streamlit builds `requirements.txt`, starts `streamlit_app.py`, and gives you a
+   `https://<your-name>.streamlit.app` address. Every push to that branch redeploys it.
+
+GitHub Pages cannot run this project: it only serves static files, and a Pygame window needs a
+real desktop. Streamlit Community Cloud is the free option that serves Python from the repository.
 
 ## Menu
 

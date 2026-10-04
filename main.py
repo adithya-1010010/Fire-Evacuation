@@ -1,4 +1,4 @@
-"""Start the Pygame version:  python run_gui.py   (needs:  pip install pygame)"""
+"""Start the Pygame version:  python main.py   (needs:  pip install pygame)"""
 
 import os
 import sys
